@@ -1,0 +1,23 @@
+.Title{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.SubTitle{
+    font-weight: 400;
+    text-align: center;
+}
+.ListHeader{
+    font-weight: bold;
+    background-color: #62bfd6;
+}
+.SummaryString{
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+}
+.DetailList{
+    /*white-space:normal !important; word-wrap:break-word;*/
+    wrap-text:true;
+    min-height: 80px;
+}

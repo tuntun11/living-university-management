@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery IntroLoader Demo</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+        <link href="demo.css" rel="stylesheet">
+        
+        <!-- PLUGIN INCLUSION  ------------------------------------- -->
+        <!-- css -->
+        <link href="../dist/css/introLoader.css" rel="stylesheet">
+		<!-- jQuery, Helpers and jqueryIntrLoader -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../dist/helpers/jquery.easing.1.3.js"></script>
+        <script src="../dist/helpers/spin.min.js"></script>
+        <script src="../dist/jquery.introLoader.js"></script>
+        <!-- -------------------------------------------------------- -->
+
+	</head>
+	<body>
+		<div id="element"></div>
+        <h1>jqueryIntroLoader demopage</h1>
+        <p>This is the IntroLoader demo page. Choose an animation and see it in action.</p>
+        
+        <p>
+            <a href="http://factory.brainleaf.eu/jqueryIntroLoader" class="button backtoindex" title="Plugin Homepage" target="_blank">Plugin Homepage</a>
+            <a href="http://factory.brainleaf.eu/jqueryIntroLoader/documentation.php" class="button backtoindex" title="Plugin Documentation" target="_blank">Documentation</a>
+        </p>
+        
+        <h3>SimpleLoader Animation</h3>
+        <ul>
+            <li><a href="demo-default.html" title="Default Options Demo">Default Options Demo</a></li>
+            <li><a href="demo-simpleloader-slideright.html" title="SimpleLoader Demo">SimpleLoader: slideRight</a></li>
+            <li><a href="demo-simpleloader-slidebottom.html" title="SimpleLoader Demo">SimpleLoader: slideBottom + callback onAfter</a></li>
+            <li><a href="demo-simpleloader-slideup.html" title="SimpleLoader Demo">SimpleLoader: slideUp + onBefore + callback onAfter</a></li>
+        </ul>
+        <h3>DoubleLoader Animation</h3>
+        <ul>
+            <li><a href="demo-doubleloader.html" title="DoubleLoader Demo">DoubleLoader Demo</a></li>
+            <li><a href="demo-doubleloader-preventscroll.html" title="DoubleLoader Demo">DoubleLoader Demo (with preventScroll)</a></li>
+        </ul>
+        
+        <h3>LettersLoader Animation</h3>
+        <ul>
+            <li><a href="demo-lettersloader.html" title="LettersLoader Demo">LettersLoader Demo</a></li>
+        </ul>
+        
+        <h3>CounterLoader Animation</h3>
+        <ul>
+            <li><a href="demo-counterloader.html" title="CounterLoader Demo">CounterLoader</a></li>
+            <li><a href="demo-counterloader-slideup.html" title="CounterLoader Demo">CounterLoader: slideUp + callback onAfter</a></li>
+        </ul>
+        
+        <h3>GifLoader Animation</h3>
+        <ul>
+            <li><a href="demo-gifloader.html" title="GifLoader Demo">GifLoader</a></li>
+            <li><a href="demo-gifloader-bub.html" title="GifLoader Demo">GifLoader: style "dark bubble"</a></li>
+        </ul>
+        
+        <h3>New Start/Stop methods (from version 1.1.0)</h3>
+        <ul>
+            <li><a href="demo-simpleloader-startstop.html" title="Start and Stop">Manual Plugin Start/Stop Example</a></li>
+        </ul>
+
+        
+		<script>
+			$(document).on('ready', function() {
+				var loader = $("#element").introLoader({
+					animation: {
+                        name: 'simpleLoader',
+                        options: {
+                            effect:'slideUp',
+                            ease: "easeInOutCirc",
+                            style: 'dark',
+                            delayTime: 1000, //delay time in milliseconds
+                            animationTime: 500
+                            
+                        }
+                    },    
+
+                    spinJs: {
+                        lines: 13, // The number of lines to draw
+                        length: 20, // The length of each line
+                        width: 10, // The line thickness
+                        radius: 30, // The radius of the inner circle
+                        corners: 1, // Corner roundness (0..1)
+                        color: '#fff', // #rgb or #rrggbb or array of colors
+                    }
+				});
+                
+			});
+            
+            
+		</script>
+        
+                
+	</body>
+</html>

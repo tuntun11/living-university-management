@@ -1,0 +1,60 @@
+{
+    "name": "tuntun11/Laravel-4-Maefahluang-KLC-Application",
+    "description": "Maefahluang KLC Application",
+    "keywords": ["laravel"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Wuttichai Songprapai",
+        "homepage": "http://www.maefahluang.org/"
+    }],
+    "require": {
+        "laravel/framework": "4.2.*",
+        "zizaco/confide": "~4.0",
+        "zizaco/entrust": "1.2.*",
+        "bllim/datatables": "~1.3",
+        "guzzlehttp/guzzle": "~5.0",
+        "jenssegers/date": "~2.0",
+        "lord/laroute": "1.*",
+        "barryvdh/laravel-debugbar": "~1.8",
+        "phpoffice/phpword": "dev-master",
+        "maatwebsite/excel": "~1.3.0",
+        "tecnick.com/tcpdf": "6.2.*",
+        "indatus/dispatcher": "1.4.*@dev"
+    },
+    "require-dev": {
+        "way/generators": "~2.6",
+        "xethron/migrations-generator": "~1.3.0",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.9",
+        "summerstreet/woodling": "~0.1.6",
+        "barryvdh/laravel-ide-helper": "~1.11"
+    },
+    "autoload": {
+        "classmap": [
+            "app/commands",
+            "app/controllers",
+            "app/library",
+            "app/models",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/tests/library"
+        ],
+        "psr-0": {
+            "Acme": "app/"
+        }
+    },
+    "scripts": {
+        "pre-update-cmd": [
+            "php artisan clear-compiled"
+        ],
+        "post-install-cmd": [
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}

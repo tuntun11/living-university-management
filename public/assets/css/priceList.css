@@ -1,0 +1,17 @@
+.TitlePriceList{
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #62bfd6;
+}
+.SubTitlePriceList{
+    font-weight: bold;
+    background-color: #a8e4ff;
+}
+.RowHeader{
+    font-weight: bold;
+    background-color: #EEEEEE;
+}
+.Number{
+    text-align: right !important;
+    alignment: right;
+}
